@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+ <head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing</title>    
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+
+    html, body {
+        width: 100%;
+        margin: auto;
+
+    }
+
+ *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    font-family:Roboto;
+    }
+
+    .header {
+        color: white;
+        background-color: #1f2937;
+        display: flex;
+        justify-content: center;
+        gap: 400px;
+    }
+
+    .header div {
+        padding: 5px;
+    }
+
+    .left_header {
+        color: #F9FAF8;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .right_header {
+        display: flex;
+        gap: 10px;
+    }
+
+    .right_header, 
+    .text2 {
+        font-size: 18px;
+        color:#E5E7EB;
+    }
+
+    .neck {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: #1f2937;
+        display:flex;
+        justify-content: center;
+        
+    }
+
+
+
+    .neck_box {
+        display: flex;
+        gap: 50px;
+    }
+
+
+    .right_neck {
+        width: 500px;
+    }
+
+    .text1 {
+        font-size: 48px;
+        font-weight: 900;
+        color: #F9FAF8;
+        width: 350px;
+    }
+
+    .text2 {
+        width: 450px;
+    }
+
+    .button1 {
+        background-color: #3882f6;
+        color: white;
+        border: none;
+        border-radius:5px;
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .button1:hover {
+        background-color: green;
+    }
+
+    .button1:active {
+        background-color: red;
+    }
+
+    .right_neck {
+    
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-color: hsl(215, 5%, 48%);
+        color: white;
+    }
+
+    .chest {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        padding-bottom: 100px;
+    }
+
+    .chest_title {
+        padding-top: 30px;
+        font-size: 36px;
+        font-weight: 900;
+        color: #275ba3;
+    }
+
+    .boxesandtext {
+        display: flex;
+        width: 900px;
+        flex-direction: column;
+        
+    }
+
+    .boxes, .boxtext {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 20px;
+        
+    }
+
+    .boxes > div {
+        height: 170px;
+        width: 170px;
+        border: #3882f6 3px solid;
+        border-radius: 10px;
+    }
+
+    .boxtext > div {
+        text-align: center;
+        height: 70px;
+        width: 170px;
+        font-size: 18px;
+        color: #E5E7EB;
+    }
+    
+
+    .stomach {
+        display: flex;
+        background-color:#E5E7EB;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stomach_box {
+        width: 700px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .bigtext {
+        font-size: 32px;
+        font-weight: 300;
+        color: #1f2937;
+        font-style: italic;
+        text-align: start;
+    }
+
+    .thunder {
+        padding-right: 40px;
+        text-align: end;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .leg {
+        padding: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bluebox {
+        border-radius: 10px;
+        display: flex;
+        width: 900px;
+        height: 120px;
+        justify-content: center;
+        background-color: #3882f6;
+    }
+    .text_box1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+        flex: 2;
+    }
+
+    .call {
+        font-weight: 900;
+        color: #E5E7EB;
+    }
+
+    .sign {
+        color: #E5E7EB;
+    }
+
+    .button2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+    .thebutton { 
+        background-color: #3882f6;
+        border-radius: 5px;
+        border: solid white 2px;
+        color: #E5E7EB;
+        width: 100px;
+        height: 30px;
+    }
+
+    .thebutton:active {
+        background-color: red;
+        color:white;
+        cursor: pointer;
+    }
+
+    .footer {
+        display: flex;
+        background-color: #1f2937;
+        color: #E5E7EB;
+        font-size: 18px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+  
+</style>
+
+
+ </head>
+<body>
+<div class="header">
+    <div class="left_header">
+       <div>Header Logo</div>
+    </div>
+    <div class="right_header">
+        <div class="link1">Header link one</div>
+        <div class="link2">Header link two</div>
+        <div class="link3">Header link three</div>
+    </div>
+</div>
+
+<div class="neck">
+    <div class="neck_box">
+    <div class="left_neck">
+        <div class="text1">This website is awesome</div>
+        <div class="text2">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.         
+        </div>
+        <button class="button1">Sign up</button>
+    </div>
+    <div class="right_neck">
+        <div class="placeholder">This is a placeholder for a image
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="chest">
+    <div class="chest_title">Some random information.</div>
+    <div class="boxesandtext">
+        <div class="boxes">
+            <div class="box">s</div>
+            <div class="box">s</div>
+            <div class="box">s</div>
+            <div class="box">s</div>
+        </div>
+        <div class="boxtext">
+            <div class="text">This is some subtext under an illustration or image</div>
+            <div class="text">This is some subtext under an illustration or image</div>
+            <div class="text">This is some subtext under an illustration or image</div>
+            <div class="text">This is some subtext under an illustration or image</div>
+        </div>
+    </div>
+</div>
+
+<div class="stomach">
+    <div class="stomach_box">
+        <div class="bigtext">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
+        <div class="thunder">-Thor, God of Thunder</div>
+    </div>
+</div>
+
+<div class="leg">
+    <div class="bluebox">
+        <div class="text_box1">
+            <div class="call">Call to actions! It's     time!</div>
+            <div class="sign">Sign up for our product 
+                by clicking that button right over there!
+            </div>
+        </div>
+        <div class="button2"><button class="thebutton">Sign up</button></div>
+    </div>
+</div>
+
+<div class="footer">
+    <div>Copyright © The Odin Project 2021</div>
+</div>
+
+</body>
+</html>
+
